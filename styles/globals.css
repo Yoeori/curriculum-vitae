@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+}
+
+h1 {
+  --minFontSize: 32px;
+  --maxFontSize: 40px;
+  --scaler: 4vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+h2 {
+  --minFontSize: 18px;
+  --maxFontSize: 32px;
+  --scaler: 2vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+p {
+  --minFontSize: 16px;
+  --maxFontSize: 24px;
+  --scaler: 2vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

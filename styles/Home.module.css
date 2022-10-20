@@ -1,0 +1,110 @@
+.container {
+  padding: 2rem 2rem;
+  width: 1100px;
+  margin: 0 auto;
+  /* background-color: white; */
+  /* min-height: 100%;/ */
+  
+  color: #000;
+}
+
+.header h1 {
+  --minFontSize: 42px;
+  --maxFontSize: 56px;
+  --scaler: 4.5vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+.header p {
+  --minFontSize: 20px;
+  --maxFontSize: 28px;
+  --scaler: 2.5vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.header .grid {
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  height: 500px;
+  background-image: url('/images/fjord-sunset.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+.header mark {
+  background-color: rgba(255,255,255,0.7);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header a {
+  transition: 0.2s opacity;
+}
+.header a:hover {
+  opacity: 0.8;
+}
+
+.profilepicture {
+  border-radius: 50%;
+  border: 10px rgba(255,255,255,1) solid !important;
+}
+
+.main h1 {
+  margin-block-end: 0;
+  /* font-size: 2.5rem; */
+
+}
+
+.main h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 1.7rem;
+}
+
+.main p {
+  margin-block-start: 0;
+  /* font-size: 1.2rem; */
+}
+
+.main a {
+  text-decoration: underline;
+  color: #0074D9;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    flex-direction: column;
+  }
+  .header .grid {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+  .header {
+    height: 650px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
