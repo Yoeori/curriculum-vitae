@@ -87,8 +87,10 @@
   flex: 1 1 0;
 }
 
-.main .grid > div:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 801px) {
+  .main .grid > div:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -109,8 +111,4 @@
   .header {
     height: 650px;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-
 }
