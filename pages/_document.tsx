@@ -5,7 +5,6 @@ export default function Document() {
         <Html>
             <Head>
                 <meta name='description' content='Curriculum vitae of Yoeri Otten' />
-                <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <body>
