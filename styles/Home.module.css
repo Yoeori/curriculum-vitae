@@ -2,24 +2,19 @@
   padding: 2rem 2rem;
   width: 1100px;
   margin: 0 auto;
-  /* background-color: white; */
-  /* min-height: 100%;/ */
-  
   color: #000;
 }
 
 .header h1 {
   --minFontSize: 42px;
   --maxFontSize: 56px;
-  --scaler: 4.5vw;
-  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+  font-size: clamp(var(--minFontSize), calc(var(--minFontSize) + 14 * ((100vw - 600px) / 400)), var(--maxFontSize));
 }
 
 .header p {
   --minFontSize: 20px;
   --maxFontSize: 28px;
-  --scaler: 2.5vw;
-  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+  font-size: clamp(var(--minFontSize), calc(var(--minFontSize) + 8 * ((100vw - 600px) / 400)), var(--maxFontSize));
 }
 
 .grid {
@@ -71,7 +66,6 @@
 .main h2 {
   margin-block-start: 0;
   margin-block-end: 0;
-  font-size: 1.7rem;
 }
 
 .main p {

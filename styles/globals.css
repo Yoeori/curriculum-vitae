@@ -6,24 +6,21 @@ body {
 }
 
 h1 {
-  --minFontSize: 32px;
+  --minFontSize: 30px;
   --maxFontSize: 40px;
-  --scaler: 4vw;
-  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+  font-size: clamp(var(--minFontSize), calc(var(--minFontSize) + 10 * ((100vw - 600px) / 400)), var(--maxFontSize));
 }
 
 h2 {
-  --minFontSize: 18px;
-  --maxFontSize: 32px;
-  --scaler: 2vw;
-  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+  --minFontSize: 19px;
+  --maxFontSize: 27px;
+  font-size: clamp(var(--minFontSize), calc(var(--minFontSize) + 8 * ((100vw - 600px) / 400)), var(--maxFontSize));
 }
 
 p {
   --minFontSize: 16px;
-  --maxFontSize: 24px;
-  --scaler: 2vw;
-  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+  --maxFontSize: 22px;
+  font-size: clamp(var(--minFontSize), calc(var(--minFontSize) + 6 * ((100vw - 600px) / 400)), var(--maxFontSize));
 }
 
 a {
